@@ -3,218 +3,33 @@
 <html>
 
 <head>
-    <title>Chi - 徵組員中！</title>
+    <title>Chi</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
-<style>
-    body {
-        font-family: 'Noto Sans TC', 'Microsoft JhengHei', sans-serif;
-        background-color: #F5F3E7;
-        /* 米色 */
-        color: #4B3F2F;
-        /* 深棕 */
-    }
-
-    #banner {
-        background: linear-gradient(135deg, #A47551 0%, #C2B280 100%);
-        /* 棕色到米色漸層 */
-        color: #F5F3E7;
-        text-align: center;
-        padding: 2rem 0;
-        font-size: 2rem;
-        font-weight: bold;
-        letter-spacing: 0.2em;
-    }
-
-    #nav {
-        background-color: #D2B48C;
-        /* 淺棕色 */
-        color: #F5F3E7;
-        text-align: center;
-        padding: 1rem 0;
-        font-weight: bold;
-        font-size: 2em;
-    }
-
-    ul {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-        background-color: #C2B280;
-        /* 米色 */
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-    }
-
-    li {
-        margin: 0.5rem;
-    }
-
-    li a {
-        display: block;
-        padding: 0.8rem 1.5rem;
-        text-decoration: none;
-        background-color: #A47551;
-        /* 棕色 */
-        color: #F5F3E7;
-        border-radius: 25px;
-        transition: all 0.3s ease;
-    }
-
-    li a:hover {
-        background-color: #8D8741;
-        /* 橄欖綠棕 */
-        transform: translateY(-2px);
-    }
-
-    section {
-        padding: 2rem;
-        margin-bottom: 2rem;
-    }
-
-    h1 {
-        color: #8D8741;
-        /* 橄欖棕*/
-        border-bottom: 3px solid #A47551;
-        padding-bottom: 0.5rem;
-        margin-bottom: 1.5rem;
-    }
-
-    .highlight {
-        background: linear-gradient(120deg, #C2B280 0%, #FFF8E1 100%);
-        padding: 1.5rem;
-        border-radius: 10px;
-        margin: 1rem 0;
-        border-left: 5px solid #A47551;
-        color: #4B3F2F;
-    }
-
-    .skill-list {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-        gap: 1rem;
-        margin: 1rem 0;
-    }
-
-    .skill-item {
-        background-color: #EDE6D6;
-        /* 淡棕米色 */
-        padding: 1rem;
-        border-radius: 8px;
-        text-align: center;
-        color: #4B3F2F;
-    }
-
-    .looking-for {
-        background-color: #D9C2A3;
-        /* 淡赭石色 */
-        padding: 1.5rem;
-        border-radius: 10px;
-        margin: 1rem 0;
-        color: #4B3F2F;
-    }
-
-    .contact-btn {
-        display: inline-block;
-        padding: 1rem 2rem;
-        background: linear-gradient(45deg, #A47551, #8D8741);
-        color: #F5F3E7;
-        text-decoration: none;
-        border-radius: 50px;
-        font-weight: bold;
-        text-align: center;
-        margin: 1rem 0;
-        transition: transform 0.3s ease;
-    }
-
-    .contact-btn:hover {
-        transform: scale(1.05);
-        background: linear-gradient(45deg, #8D8741, #A47551);
-    }
-</style>
-</head>
-
 <body>
-    <!--put your main content here-->
-    <div id="banner">Chi&nbsp;徵&nbsp;組&nbsp;員&nbsp;中！</div>
+    <div id="banner"></div>
     <div id="nav">
-        下&nbsp;背&nbsp;痛&nbsp;與&nbsp;健&nbsp;保&nbsp;制&nbsp;度</div>
-    <ul>
-        <li><a href="#proposal">PROPOSAL</a></li>
-        <li><a href="#mypart">ABOUT CHI</a></li>
-        <li><a href="#looking">尋找夥伴</a></li>
-        <li><a href="#contact">CONTACT</a></li>
-    </ul>
-    <div id="content"></div>
-    <section id="proposal">
-        <h1>PROPOSAL</h1>
-        <p>
-            大家好～我想做一個關於「台灣下背痛與健保制度問題」的數據新聞專案，正在找夥伴！<br>
-            <br>
-            <br>
-            <strong>專案想法：</strong><br>
-            <br>
-            下背痛影響高達 50-80% 的台灣民眾，是僅次於感冒的常見疾病，更是 45 歲以下族群活動受限的主要原因。然而，令人擔憂的是：無論採用手術或保守治療，下背痛兩年復發率竟高達
-            60-85%（謝霖芬，2004）。<br>
-            <br>
-            為什麼台灣的下背痛治療效果如此不理想？我們想透過數據深入探討：<br>
-            <br>
-            （以下為暫定方向，由 Claude 生成，歡迎討論）<br>
-            <br>
-            - 台灣健保給付制度是否偏重「治標不治本」的被動治療？<br>
-            - 相較於國外實證研究推薦的主動治療方式，台灣的治療模式有何落差？<br>
-            - 患者在現行制度下的「重複就診迴圈」如何形成？<br>
-            <br>
-            這個專案將結合健保數據、國際研究比較、物理治療師、患者訪談，以數據視覺化的方式呈現患者所經歷的「治療迷宮」。<br>
-            希望能提升民眾意識與健保體制討論，真正幫助台灣的下背痛患者擺脫（慢性）疼痛。<br>
-            <br>
-            以下為公視新聞相關報導，提供參考：<br>
-            <br>
-            <!-- 這裡嵌入 YouTube 影片 -->
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/7UGE82moggA?si=E0yA9pAyLBFlY_TA"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-            </iframe>
-        </p>
-    </section>
-    <section id="mypart">
-        <h1>ABOUT CHI</h1>
-        <p>
-            我今年 30 歲，現為社會三學生，未來想成為數據記者。同時我也是個下背痛患者，有一年的治療經驗，去過骨科、復健科、健保復健、自費物理治療。因此對這個議題有「親身」經驗，也認識幾位物理療師。<br>
-            <br>
-            <strong>我能貢獻的：</strong><br>
-            <br>
-            - Hmmm...寫作我覺得還行<br>
-            - 基礎統計與數據分析（社會統計、R、Python 自學一年，但有點忘了XD）<br>
-            - 專案時程管理（做事積極）<br>
-            - 研究設計（社會科學背景，對問卷設計、訪談有粗淺經驗）<br>
-            - 喜歡看文獻、找資料<br>
-        </p>
-    </section>
-
-    <section id="looking">
-        <h1>尋找夥伴</h1>
-        <p>
-            <strong>希望找到：</strong><br>
-            <br>
-            - 有設計背景的人（我設計較弱）<br>
-            - 有數據庫、爬蟲經驗的人（雖然還不確定是否有需要這個技能）<br>
-            - 對數據視覺化與網頁設計有興趣、想一起認真學習的夥伴
-        </p>
-    </section>
-
-    <section id="contact">
-        <h1>CONTACT</h1>
-        <p>
-            有興趣的朋友請 EMAIL 我～<br>
-            <a class="contact-btn" href="mailto:b12305054@ntu.edu.tw">b12305054@ntu.edu.tw</a>
-        </p>
-    </section>
-    </div>
-
+        <ul>
+            <li><a href="recruit.html">徵求組員</a></li>
+            <li><a href="#scene01">Scene01</a></li>
+            <li><a href="#scene02">Scene02</a></li>
+            <li><a href="#scene03">Scene03</a></li>
+            <li><a href="#scene04">Scene04</a></li>
+        </ul>
+    <div id="content">
+        <section id="scene01">
+            <h1>Scene01</h1>
+        </section>
+        <section id="scene02">
+            <h1>Scene02</h1>
+        </section>
+        <section id="scene03">
+            <h1>Scene03</h1>
+        </section>
+        <section id="scene04">
+            <h1>Scene04</h1>
+        </section>
+    <div id="supporting"></div>
+    <div id="footer"></div>
 </body>
-
-</html>
