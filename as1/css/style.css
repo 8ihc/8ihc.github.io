@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Calibri, sans-serif;
+}
+
+/* 整個頁面容器 */
+#container {
+    display: flex;
+    flex-direction: column;
+    /* 垂直排列：header -> main -> footer */
+    min-height: 100vh;
+}
+
+/* 第一列：Header（包含 banner 和 nav） */
+#header {
+    display: flex;
+    justify-content: space-between;
+    /* banner 左邊，nav 右邊 */
+    align-items: center;
+    /* 垂直置中 */
+    background: #F2EFE9;
+    padding: 40px 40px;
+    /* padding 文字內縮，控制文字要離邊框多遠 */
+}
+
+#banner {
+    font-size: 24px;
+    font-weight: bold;
+    color: #564E58;
+}
+
+#nav ul {
+    display: flex;
+    /* 選單項目水平排列 */
+    list-style: none;
+    /* 移除圓點 */
+    gap: 20px;
+    /* 項目間距 */
+}
+
+#nav a {
+    text-decoration: none;
+    color: #564E58;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: background 0.3s;
+}
+
+#nav a:hover {
+    background: #564E58;
+    color: #F2EFE9;
+}
+
+/* 第二列：Main（包含 content 和 supporting） */
+#main {
+    display: flex;
+    /* 水平排列 */
+    flex-grow: 1;
+    /* 佔用剩餘空間 */
+    min-height: 400px;
+    /* 給一個最小高度確保顯示 */
+}
+
+#content {
+    flex: 4;
+    /* 佔 4 份空間 */
+    padding: 40px;
+    background: #F2EFE9;
+    border: 2px solid green;
+    /* 臨時邊框，確保能看到 */
+}
+
+#content section {
+    margin-bottom: 40px;
+    padding: 20px;
+    background: whitesmoke;
+    border-radius: 8px;
+}
+
+#content h1 {
+    color: #564E58;
+    border-bottom: 2px solid #4CAF50;
+    padding-bottom: 10px;
+}
+
+#supporting {
+    flex: 1;
+    /* 佔 1 份空間 */
+    background: #F2EFE9;
+    padding: 40px 20px;
+    border-left: 2px solid #ddd;
+    border: 2px solid orange;
+    /* 臨時邊框，確保能看到 */
+}
+
+/* 第三列：Footer */
+#footer {
+    background: #564E58;
+    color: #F2EFE9;
+    text-align: center;
+    padding: 20px;
+}
