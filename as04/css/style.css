@@ -1,0 +1,72 @@
+.img-fluid {
+    max-height: 100vh;
+    width: auto;
+    object-fit: contain;
+}
+
+.section-divider {
+    height: auto;
+    margin: 3rem 0;
+    padding: 2rem;
+    background-color: transparent;
+    border: none;
+}
+
+.emphasis-text {
+    font-weight: bold;
+    font-size: 1.1em;
+    color: #000;
+}
+
+.floating-card {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 2rem;
+    margin: 2rem;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    position: relative;
+    z-index: 1000;
+    line-height: 1.8;
+}
+
+/* Add transition for image container */
+.image-container {
+    transition: transform 0.9s ease-out;  /* Control animation speed here */
+}
+
+/* Media query for desktop screens */
+@media (min-width: 992px) {
+    /* Left shift for sections 1 and 3 */
+    #section1:hover .image-container,
+    #section3:hover .image-container {
+        transform: translateX(-30%);  /* Negative value moves left */
+    }
+
+    /* Right shift for sections 2 and 4 */
+    #section2:hover .image-container,
+    #section4:hover .image-container {
+        transform: translateX(30%);  /* Positive value moves right */
+    }
+}
+
+.sticky-nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2000;
+    background: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+.nav-link {
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+    transform: translateY(-2px);
+    color: #666666 !important;
+}
