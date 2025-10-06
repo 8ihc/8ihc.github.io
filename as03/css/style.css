@@ -42,12 +42,8 @@
 
 .nav-link:hover {
     transform: translateY(-2px);
-    color: #666666 !important;  /* 改為灰色系 */
+    color: #666666 !important;  
 }
-
-/* .navbar-brand {
-    font-weight: bold;
-} */
 
 /* 導航列對齊靠左 */
 .navbar-collapse {
