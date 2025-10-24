@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 6</title>
+
+    <!-- jQuery & YouTube API -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://www.youtube.com/iframe_api"></script>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- 導覽列 - 固定在左側 -->
+    <nav class="navbar" id="navbar">
+        <button class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <div class="nav-menu" id="navMenu">
+            <a href="../index.html" class="nav-link">首頁</a>
+            <a href="#scroll-video" class="nav-link">影片淡出</a>
+            <a href="#question-section" class="nav-link">翻卡</a>
+            <a href="#focus-section" class="nav-link">畫底線</a>
+        </div>
+    </nav>
+
+    <!-- 開始畫面 -->
+    <div id="start-screen">
+        <div class="instruction">點擊遙控器開始（音量注意）</div>
+        <img id="remote" src="images/01_remote_control.png" alt="遙控器">
+    </div>
+
+    <!-- YouTube 影片容器 -->
+    <div id="video-container">
+        <div id="youtube-container">
+            <iframe id="youtube-player" src="https://www.youtube.com/embed/ryTY748cUfk?enablejsapi=1&rel=0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+            </iframe>
+        </div>
+    </div>
+
+    <main id="content">
+        <!-- 150vh 高度的空白區塊，用於觸發影片淡出 -->
+        <section id="scroll-video" class="panel">
+        </section> 
+
+        <div id="spacer"></div>
+
+        <section id="intro-section" class="panel">
+            <div class="intro-content">
+                <h2>你看過這個廣告嗎？</h2>
+                <div id="spacer"></div>
+                <p>
+                    <span class="bold">坐骨神經痛</span>是下背痛患者的常見症狀。
+                <p>
+                    疼痛範圍常從下背部或臀部開始，然後一路延伸到大腿後側、小腿，甚至腳踝與腳趾。
+                    這種刺痛、灼熱、麻木或像電流竄過的感覺，
+                    讓人<span class="bold">無法久坐、無法久站</span>，
+                    嚴重時，連躺下、翻身都會<span class="bold">痛到醒來</span>。
+                </p>
+                <p>
+                    長期下來，疼痛不僅讓人<span class="bold">無法專注工作、睡眠品質下降</span>，
+                    也會造成肌肉無力、姿勢代償，
+                    甚至產生<span class="bold">焦慮與無力感</span>。
+                </p>
+                </p>
+            </div>
+        </section>
+
+        <div id="spacer"></div>
+
+        <section id="question-section" class="panel">
+            <h2>如果你是坐骨神經痛患者，你會選擇如何治療呢？</h2>
+            <div id="spacer"></div>
+            <div class="cards">
+                <!-- 卡片模板 -->
+                <div class="card" tabindex="0">
+                    <div class="card-inner">
+                        <div class="card-front card-face">💊<div class="front-text">吃藥就會好</div>
+                        </div>
+                        <div class="card-back card-face">
+                            <div style="text-align: center;">
+                                <div style="margin-bottom: 10px;">❌ 止痛藥只能暫時緩解，無法根治</div>
+                                <div>✅ 正確做法：搭配物理治療與運動訓練</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card" tabindex="0">
+                    <div class="card-inner">
+                        <div class="card-front card-face">🛏️<div class="front-text">痛就躺著多休息</div>
+                        </div>
+                        <div class="card-back card-face">
+                            <div style="text-align: center;">
+                                <div style="margin-bottom: 10px;">❌ 長期臥床反而讓肌肉萎縮，更難復原</div>
+                                <div>✅ 正確做法：適度活動與漸進式復健運動</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card" tabindex="0">
+                    <div class="card-inner">
+                        <div class="card-front card-face">
+                            🏥<div class="front-text">醫生說開刀就開</div>
+                        </div>
+                        <div class="card-back card-face">
+                            <div style="text-align: center;">
+                                <div style="margin-bottom: 10px;">❌ 手術有風險，且不一定能解決問題</div>
+                                <div>✅ 正確做法：多尋求不同醫生建議，並嘗試保守治療</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div id="spacer"></div>
+
+        <section id="focus-section" class="panel">
+            <article>
+                <h3>真正有效的治療方式</h3>
+                <p>
+                    研究顯示，<span class="highlight-text">主動式復健運動</span>比被動治療更有效。
+                    透過<span class="highlight-text">核心肌群訓練</span>和<span class="highlight-text">動作控制訓練</span>，
+                    患者可以<span class="highlight-text">有效改善</span>下背痛問題。
+                </p>
+                <p>
+                    <span class="highlight-text">物理治療師的專業指導</span>
+                    配合<span class="highlight-text">規律運動習慣</span>，
+                    能有效降低復發機率，幫助患者重拾生活品質。
+                </p>
+                <p>
+                    記住：<span class="highlight-text">治療的首要目標不只是「不痛」，更重要的是重新找回生活的掌控感</span>。
+                </p>
+            </article>
+        </section>
+
+        <section class="disclaimer-section panel">
+            <div class="disclaimer-content">
+                <p style="text-align: center; color: #666; font-size: 16px; line-height: 1.8;">
+                    ⚠️ 以上資訊僅供參考，不能取代專業醫療建議<br>
+                    <br>
+                    若您有坐骨神經痛或相關症狀，建議諮詢：
+                    骨科、神經外科、復健科、疼痛科醫師，或物理治療師等。<br>
+                    <br>
+                    每個人的狀況不同，適合的治療方式也不同，
+                    請與您信任的醫療專業人員討論最適合您的方案。
+                </p>
+                <footer style="text-align: center; margin-top: 40px; padding-top: 20px; border-top: 1px solid #ddd; color: #999; font-size: 14px;">
+                    © 2025 Chi H. All Rights Reserved.
+                </footer>
+            </div>
+        </section>
+    </main>
+
+    <!-- External JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
