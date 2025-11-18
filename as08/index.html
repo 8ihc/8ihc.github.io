@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Assignment 8</title>
+
+	<!-- Bootstrap 5.3 CSS (CDN) -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- Project CSS -->
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+	<!-- LANDING (Full screen) -->
+	<header id="landing" class="vh-100 d-flex align-items-center justify-content-center text-center text-white">
+		<div class="container">
+			<h1 class="display-4 fw-bold">Border Narratives</h1>
+			<p class="lead mt-3">A multimedia exploration of migration, policy, and public debate at the U.S. border.</p>
+		</div>
+	</header>
+
+	<!-- VIDEO WALL SECTION -->
+	<section id="video-wall" class="py-5">
+		<div class="container">
+			<div class="row g-4">
+				<!-- Left: 2x2 video grid -->
+				<div class="col-lg-8">
+					<div class="row g-3">
+						<div class="col-6">
+							<video class="wall-video w-100" playsinline muted autoplay loop preload="metadata" crossorigin>
+								<source src="https://d21rhj7n383afu.cloudfront.net/washpost-production/TWP/20161001/57efe827e4b0bc3a464cd99a/57fb002be4b037a240c7b2ab_1439399835595-cf9g26_t_1476067411708_1280_720_2000.mp4" type="video/mp4">
+							</video>
+						</div>
+						<div class="col-6">
+							<video class="wall-video w-100" playsinline muted autoplay loop preload="metadata" crossorigin>
+								<source src="https://d21rhj7n383afu.cloudfront.net/washpost-production/TWP/20161001/57effca6e4b0bc3a464cdea0/57fb0043e4b037a240c7b2ad_1439399835595-cf9g26_t_1476067421749_1280_720_2000.mp4" type="video/mp4">
+							</video>
+						</div>
+						<div class="col-6">
+							<video class="wall-video w-100" playsinline muted autoplay loop preload="metadata" crossorigin>
+								<source src="https://d21rhj7n383afu.cloudfront.net/washpost-production/TWP/20161001/57efff8ce4b0bc3a464ce0e7/57fb009de4b037a240c7b2c9_1439399835595-cf9g26_t_1476067527078_1280_720_2000.mp4" type="video/mp4">
+							</video>
+						</div>
+						<div class="col-6">
+							<video class="wall-video w-100" playsinline muted autoplay loop preload="metadata" crossorigin>
+								<source src="https://d21rhj7n383afu.cloudfront.net/washpost-production/TWP/20161001/57f0003fe4b0bc3a464ce193/57fb0113e4b037a240c7b2e9_1439399835595-cf9g26_t_1476067636559_1280_720_2000.mp4" type="video/mp4">
+							</video>
+						</div>
+					</div>
+				</div>
+
+				<!-- Right: text content (neutral informational tone) -->
+				<div class="col-lg-4 d-flex flex-column justify-content-center">
+					<div class="p-3 rounded bg-light border shadow-sm">
+						<h3>Context & Perspectives</h3>
+						<p>
+							The issue of migration at the U.S. southern border has been the focus of intense political debate. Policy changes in recent years have affected asylum procedures, enforcement, and cross-border cooperation. Media, advocacy groups, and local communities all offer differing perspectives about causes, consequences, and humane approaches to migration.
+						</p>
+						<p>
+							This project uses archival footage to present multiple visual narratives. The aim is to encourage reflection about policy, human experience, and how public discourse shapes understanding of complex social issues.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- CORE NARRATIVE CHAPTERS (four full-screen sections) -->
+	<!-- Each chapter uses one of the four videos as a background video -->
+
+	<section class="chapter" id="chapter-1" data-video-src="https://d21rhj7n383afu.cloudfront.net/washpost-production/TWP/20161001/57efe827e4b0bc3a464cd99a/57fb002be4b037a240c7b2ab_1439399835595-cf9g26_t_1476067411708_1280_720_2000.mp4">
+		<video class="bg-video" muted playsinline loop preload="auto">
+			<source src="https://d21rhj7n383afu.cloudfront.net/washpost-production/TWP/20161001/57efe827e4b0bc3a464cd99a/57fb002be4b037a240c7b2ab_1439399835595-cf9g26_t_1476067411708_1280_720_2000.mp4" type="video/mp4">
+		</video>
+		<div class="overlay">
+			<div class="text-box">
+				<h2>Chapter 1 — At the Border</h2>
+				<p>
+					A close look at daily crossings and the lived experience of migrants and border communities. This chapter follows personal stories, everyday routines, and the practical challenges people face when navigating border crossings and temporary shelters. It foregrounds human experience rather than headlines, highlighting moments of resilience, uncertainty, and the informal support networks that emerge in these contexts.
+				</p>
+				<p>
+					We witness families making difficult decisions about when and how to cross, often after journeys that span weeks or months. Border agents, aid workers, and local residents navigate their own complex roles—balancing enforcement, compassion, and limited resources. These encounters reveal the humanity on all sides of the border debate.
+				</p>
+				<p>
+					Through intimate footage and first-person accounts, this chapter shows how the border is not just a political abstraction but a lived reality where policy meets human need. The stories here challenge simplistic narratives and invite viewers to consider the border as a space of constant negotiation, adaptation, and profound personal stakes.
+				</p>
+			</div>
+		</div>
+	</section>
+
+	<section class="chapter" id="chapter-2" data-video-src="https://d21rhj7n383afu.cloudfront.net/washpost-production/TWP/20161001/57effca6e4b0bc3a464cdea0/57fb0043e4b037a240c7b2ad_1439399835595-cf9g26_t_1476067421749_1280_720_2000.mp4">
+		<video class="bg-video" muted playsinline loop preload="auto">
+			<source src="https://d21rhj7n383afu.cloudfront.net/washpost-production/TWP/20161001/57effca6e4b0bc3a464cdea0/57fb0043e4b037a240c7b2ad_1439399835595-cf9g26_t_1476067421749_1280_720_2000.mp4" type="video/mp4">
+		</video>
+		<div class="overlay">
+			<div class="text-box">
+				<h2>Chapter 2 — Policy Shift</h2>
+				<p>
+					Examining recent policy changes, administrative directives, and their impacts on processing and detention. This chapter traces how legal and administrative shifts change the pace and outcome of asylum claims, the capacity of processing centers, and the daily realities of migrants and staff. It considers both intended policy goals and unintended consequences for families, legal access, and humanitarian services.
+				</p>
+				<p>
+					New regulations around credible fear interviews, expedited removal procedures, and third-country agreements have fundamentally altered the asylum landscape. Legal advocates scramble to keep pace with evolving guidelines, while migrants find themselves caught in bureaucratic limbo. Processing times fluctuate wildly depending on funding, staffing, and political priorities.
+				</p>
+				<p>
+					This chapter examines how policy changes ripple outward—affecting not just those seeking asylum but also the communities that host them, the courts that adjudicate claims, and the non-profits that provide legal representation. It asks: who benefits from these shifts, who bears the costs, and what alternatives might better balance security concerns with humanitarian obligations?
+				</p>
+			</div>
+		</div>
+	</section>
+
+	<section class="chapter" id="chapter-3" data-video-src="https://d21rhj7n383afu.cloudfront.net/washpost-production/TWP/20161001/57efff8ce4b0bc3a464ce0e7/57fb009de4b037a240c7b2c9_1439399835595-cf9g26_t_1476067527078_1280_720_2000.mp4">
+		<video class="bg-video" muted playsinline loop preload="auto">
+			<source src="https://d21rhj7n383afu.cloudfront.net/washpost-production/TWP/20161001/57efff8ce4b0bc3a464ce0e7/57fb009de4b037a240c7b2c9_1439399835595-cf9g26_t_1476067527078_1280_720_2000.mp4" type="video/mp4">
+		</video>
+		<div class="overlay">
+			<div class="text-box">
+				<h2>Chapter 3 — Voices & Communities</h2>
+				<p>
+					Community responses, volunteer aid, and the interactions between residents and newcomers. In this chapter we listen to local leaders, volunteers, and migrant voices to understand how communities organize assistance, mediate conflict, and negotiate resources. It highlights grassroots initiatives, the role of non-profits, and the complex social dynamics that shape everyday coexistence.
+				</p>
+				<p>
+					Border towns and cities have become unlikely laboratories for integration, where churches, schools, and civic organizations step in to fill gaps left by federal programs. Volunteers coordinate housing, meals, medical care, and legal clinics—often working with minimal funding and facing burnout. Meanwhile, longer-term residents grapple with changing demographics, strained public services, and competing narratives about community identity.
+				</p>
+				<p>
+					The chapter also features voices of migrants themselves—their reasons for leaving home, their aspirations for the future, and their reflections on the journey. These testimonies complicate stereotypes and reveal the diversity of experiences: some seek refuge from violence, others pursue economic opportunity, and many navigate a combination of push and pull factors.
+				</p>
+				<p>
+					By foregrounding community-level action and dialogue, this section demonstrates that solutions often emerge from the ground up. It shows how local actors build trust, broker compromises, and create networks of mutual aid that transcend partisan divides—offering lessons for policymakers and citizens alike.
+				</p>
+			</div>
+		</div>
+	</section>
+
+	<section class="chapter" id="chapter-4" data-video-src="https://d21rhj7n383afu.cloudfront.net/washpost-production/TWP/20161001/57f0003fe4b0bc3a464ce193/57fb0113e4b037a240c7b2e9_1439399835595-cf9g26_t_1476067636559_1280_720_2000.mp4">
+		<video class="bg-video" muted playsinline loop preload="auto">
+			<source src="https://d21rhj7n383afu.cloudfront.net/washpost-production/TWP/20161001/57f0003fe4b0bc3a464ce193/57fb0113e4b037a240c7b2e9_1439399835595-cf9g26_t_1476067636559_1280_720_2000.mp4" type="video/mp4">
+		</video>
+		<div class="overlay">
+			<div class="text-box">
+				<h2>Chapter 4 — Public Discourse</h2>
+				<p>
+					How media framing and political rhetoric shape public attitudes and policy debate. This chapter explores the narratives promoted by different media outlets and political actors, and how those narratives influence public perception, voter sentiment, and policy priorities. It asks how images and language can amplify fear or empathy, and considers strategies for more nuanced, informed public conversation.
+				</p>
+				<p>
+					We analyze how certain visual tropes—caravans, detention centers, crying children—become powerful symbols in political campaigns and news cycles. These images can mobilize support for restrictive policies or galvanize humanitarian responses, depending on the accompanying commentary and editorial choices. The chapter traces how specific phrases and metaphors ("invasion," "crisis," "dreamers") carry different ideological weights and emotional resonances.
+				</p>
+				<p>
+					Finally, this chapter considers the role of journalism, documentary, and citizen media in shaping a more informed public. It highlights fact-checking initiatives, long-form reporting, and platforms that center migrant voices. By examining both the distortions and the possibilities of public discourse, it invites viewers to become more critical consumers of information and more engaged participants in democratic debate about immigration policy.
+				</p>
+			</div>
+		</div>
+	</section>
+
+	<!-- Footer -->
+	<footer class="py-4 text-center bg-dark text-white">
+		<div class="container">© Project — Border Narratives</div>
+	</footer>
+
+	<!-- jQuery (user specified CDN) -->
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<!-- Bootstrap Bundle JS -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+	<!-- Project JS -->
+	<script src="js/main.js"></script>
+</body>
+</html>

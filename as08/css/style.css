@@ -1,0 +1,107 @@
+/* Global */
+:root{
+  --overlay-bg: rgba(0,0,0,0.45);
+}
+html,body{height:100%;}
+body{font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; margin:0;}
+
+/* Landing */
+#landing{
+  background: linear-gradient(180deg, #1f3b6b 0%, #183053 60%);
+  background-size: cover;
+}
+#landing h1{letter-spacing:0.02em;}
+
+/* Video wall */
+.wall-video{
+  height: 240px; /* fixed height for grid thumbnails */
+  object-fit: cover;
+  background: #000;
+}
+@media (min-width:992px){
+  .wall-video{height:200px}
+}
+
+/* Chapters */
+.chapter{
+  position: relative;
+  height: 300vh;
+  min-height: 300vh;
+}
+
+.bg-video{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; /* 改為 100% 讓影片填滿整個 300vh 的 chapter */
+  object-fit: cover;
+  z-index: 1;
+}
+
+.overlay{
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+
+.text-box{
+  pointer-events: auto;
+  max-width: 920px;
+  max-height: 85vh;
+  margin: 0 20px;
+  padding: 28px;
+  background: var(--overlay-bg);
+  color: #fff;
+  border-radius: 12px;
+  backdrop-filter: blur(6px);
+  box-shadow: 0 8px 30px rgba(0,0,0,0.4);
+  transform: translateY(0);
+  transition: opacity 0.6s ease, transform 0.15s linear;
+  overflow-y: auto;
+  overflow-x: hidden;
+  opacity: 0;
+}
+
+.text-box.visible{
+  opacity: 1; /* 顯示狀態 */
+}
+
+.text-box h2{margin-bottom:12px;}
+
+/* 自訂捲動條樣式（適用於 Webkit 瀏覽器） */
+.text-box::-webkit-scrollbar {
+  width: 8px;
+}
+.text-box::-webkit-scrollbar-track {
+  background: rgba(255,255,255,0.1);
+  border-radius: 4px;
+}
+.text-box::-webkit-scrollbar-thumb {
+  background: rgba(255,255,255,0.3);
+  border-radius: 4px;
+}
+.text-box::-webkit-scrollbar-thumb:hover {
+  background: rgba(255,255,255,0.5);
+}
+
+/* Footer */
+footer{letter-spacing:0.02em}
+
+/* Responsive adjustments */
+@media (max-width: 767.98px){
+  .wall-video{height:160px}
+  .text-box{padding:18px}
+  #landing h1{font-size:2.1rem}
+}
+
+@media (max-width: 480px){
+  .wall-video{height:140px}
+  .text-box{padding:14px}
+}
